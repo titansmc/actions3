@@ -15,6 +15,11 @@ jobs:
       - name: Compilar
         run: make
 
+      - uses: actions/upload-artifact@v4
+        with:
+          name: estadistiques-win
+          path: estadistiques.exe
+
   build-mac:
     runs-on: macos-latest
 
