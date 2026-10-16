@@ -24,3 +24,13 @@ jobs:
 
       - name: Compilar
         run: make
+
+  build-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repo
+        uses: actions/checkout@v4
+
+      - name: Compilar
+        run: make
