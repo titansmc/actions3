@@ -8,9 +8,9 @@ jobs:
   build-windows:
     runs-on: windows-latest
 
-  steps:
-    - name: Checkout del repo
-      uses: actions/checkout@v4
+    steps:
+      - name: Checkout del repo
+        uses: actions/checkout@v4
 
-    - name: Compilar
-      uses: make
+      - name: Compilar
+        uses: make
