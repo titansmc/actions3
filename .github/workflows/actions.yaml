@@ -14,3 +14,13 @@ jobs:
 
       - name: Compilar
         run: make
+
+  build-mac:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout del repo
+        uses: actions/checkout@v4
+
+      - name: Compilar
+        run: make
